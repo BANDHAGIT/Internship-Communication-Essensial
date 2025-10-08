@@ -2,13 +2,14 @@ import serial
 import time
 
 com = "COM3"  # Ganti dengan port serial yang sesuai
-port = 9600
-ser = serial.Serial(com, port)
+baud = 9600 # Sesuaikan dengan baud rate
+ser = serial.Serial(com, baud)
 print("Mengirim data...")
 
 i = 0
 while True:
-    ser.write(f"Data {i}\n".encode())
-    print(f"Kirim: Data {i}")
+    data = i % 2 
+    ser.write(f"{data}\n".encode())
+    print(f"Kirim: {data}")
     i += 1
     time.sleep(1)

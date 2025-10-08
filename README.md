@@ -1,4 +1,4 @@
-# Communication Essentials Tutorial
+# Communication Essentials
 
 Welcome to the **Communication Essentials for Bandhayudha Internship** series!  
 
